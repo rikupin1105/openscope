@@ -793,7 +793,7 @@ export default class RouteModel extends BaseModel {
         let starLegModel;
 
         try {
-            starLegModel = new LegModel(routeString.toUpperCase());
+            starLegModel = new LegModel(routeString);
         } catch (error) {
             console.error(error);
 
